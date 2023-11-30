@@ -3,6 +3,8 @@ let left = 0;
 let tops = 0;
 
 document.addEventListener('keydown' , e => {
+    e.preventDefault();
+
     switch (e.key) {
         case "ArrowLeft":
             if(left>0 && left <=500){
@@ -46,9 +48,9 @@ document.addEventListener('keydown' , e => {
 })
 
 function moveNinja(direction){
-    if(ninja.style.backgroundImage == `url("../img/${direction}1.png")`){
-        ninja.style.backgroundImage = `url("../img/${direction}2.png")`;
+    if(ninja.style.backgroundImage == `url("img/${direction}1.png")`){
+        ninja.style.backgroundImage = `url("img/${direction}2.png")`;
     }else{
-        ninja.style.backgroundImage = `url("../img/${direction}1.png")`
+        ninja.style.backgroundImage = `url("img/${direction}1.png")`
     }
 }

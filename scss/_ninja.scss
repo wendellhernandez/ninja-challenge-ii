@@ -1,17 +1,17 @@
 header{
     text-align: center;
-    margin-top: 30px;
+    margin-top: 10px;
     font-size: 40px;
     font-weight: bold;
     color: $white;
 }
 
 main{
-    padding: 50px 0px;
+    padding: 30px 0px;
 }
 
 .container{
-    width: 100vw;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -37,7 +37,7 @@ main{
     // background-color: $green;
     background-position: center center;
     background-color: $green;
-    // background-image: url("../img/down1.png");
+    background-image: url("../img/down1.png");
     border-radius: 20px;
     transition: .1s ease-in-out;
     position: absolute;
@@ -47,7 +47,7 @@ main{
 
 .instructions{
     text-align: center;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
 
 footer{
